@@ -128,7 +128,6 @@ btnChange.style.height = "30px";
   });
   
 
-
   //});
 
   /* -------------------------------------------------------------------------- */
@@ -255,7 +254,7 @@ btnChange.style.height = "30px";
     
     clickedItem = document.querySelector('#modifyTask')
     arr=clickedItem.innerText.split('-'); tasksCore('modify',arr[0].substring(0,1)+arr[1])
-    
+    consultarTareas();
     
 
 
@@ -269,7 +268,7 @@ btnChange.style.height = "30px";
   function botonBorrarTarea() {clickedItem = document.querySelector("#modifyTask");
   arr = clickedItem.innerText.split("-");
   tasksCore("delete", arr[0].substring(0, 1) + arr[1]);
-   
+   consultarTareas();
     
 
     
