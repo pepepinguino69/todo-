@@ -52,7 +52,8 @@
         },
       };
       realizarRegister(config)
-        form.reset();
+      form.reset();
+      window.location.replace('index.html')
     }
     else
       
