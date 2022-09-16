@@ -239,3 +239,13 @@ footer img {
 
 .completed{text-decoration: line-through;}
 .panel{padding:10px;display:flex;align-items:center;height:30px;font-size:16px;}
+.modifyTask{border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    color: black;display: flex;
+    justify-content: center;
+    align-items: center;
+    width:72vw;
+    height:30px}
+
+.modifyPanel{display: flex;align-items: center;}

@@ -53,6 +53,7 @@ window.addEventListener("load", function () {
   let form = document.querySelector("form");
   const userInfo = document.querySelector("#user");
   modifyTasks = document.createElement('div')
+  modifyTasks.className='modifyPanel'
   modifyTasks.style.display = 'none'
 
   modifyTasks.id='fullPanel'
@@ -105,7 +106,8 @@ window.addEventListener("load", function () {
 
 
 
-
+  taskBillboard.className = 'modifyTask'
+  
     buttonPanel.appendChild(btnChange)
     buttonPanel.appendChild(btnDelete)
   buttonPanel.appendChild(btnCancel)
