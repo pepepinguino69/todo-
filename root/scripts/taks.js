@@ -10,9 +10,9 @@ window.addEventListener("load", function () {
       let base = "https://ctd-todo-api.herokuapp.com/v1";
       const response = await fetch(base + url, configComm);
       const data = await response.json();
-      alert(response.statusText);
+      ;
       if (response.status > 299) {
-        alert("error");
+       alert(response.statusText);
       } else {
         return data;
       }
