@@ -212,6 +212,7 @@ btnChange.style.height = "30px";
       line = document.createElement('li')
       line.style.listStyleType = "\2746";
      
+    
       
       line.innerHTML = `${e.id}-${e.userId}-${e.description}-${miFecha(e.createdAt)}`
       line.addEventListener("click", (evento) => {
@@ -225,9 +226,11 @@ btnChange.style.height = "30px";
     
 
       });
-      if (e.completed) { line.id = 'c' + e.id; fragmentTerminadas.appendChild(line); acc++ }
-      else {line.id = 'p' + e.id;
-        fragmentPendientes.appendChild(line)
+      if (e.completed) { line.id = 'c' + e.id; line.className = 'completed'; fragmentTerminadas.appendChild(line); acc++; }
+      else {
+        line.id = 'p' + e.id;
+        line.className = '';
+        fragmentPendientes.appendChild(line);
       }
     })
     tareasPendientes.appendChild(fragmentPendientes)
@@ -259,7 +262,10 @@ btnChange.style.height = "30px";
   function botonesCambioEstado(estado) {
     
     clickedItem = document.querySelector('#modifyTask')
-    arr=clickedItem.innerText.split('-'); tasksCore('modify',arr[0].substring(0,1)+arr[1])
+
+    arr = clickedItem.innerText.split('-');
+    clickedItemInList = document.querySelector('#' + arr[0].substring(0, 1) + arr[1])
+    tasksCore('modify', arr[0].substring(0, 1) + arr[1])
      document.querySelector("#fullPanel").style.display = "none";
     consultarTareas();
     

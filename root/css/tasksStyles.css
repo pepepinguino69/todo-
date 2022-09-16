@@ -236,3 +236,5 @@ footer {
 footer img {
     height: 100%;
 }
+
+.completed{text-decoration: line-through;}
