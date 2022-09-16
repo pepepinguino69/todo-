@@ -68,10 +68,14 @@ window.addEventListener("load", function () {
   modifyTasks.style.height = '50px'
   modifyTasks.style.fontSize = '20px'
   btnChange = this.document.createElement('button')
+  btnChange.innerHTML = '<i class="fas fa-exchange-alt"></i>&nbsp Mover';
   btnChange.addEventListener("click", (e) => {
     botonesCambioEstado();
   });
-  btnDelete = this.document.createElement("button");
+  btnDelete = document.createElement("button");
+  btnDelete.innerHTML = '<i class="fa fa-trash"></i><sp>&nbspDelete';
+	
+  
   btnDelete.addEventListener("click", (e) => {
     botonBorrarTarea();
 
@@ -90,17 +94,17 @@ window.addEventListener("load", function () {
   btnCancel.addEventListener("click", (e) => {
     document.querySelector("#fullPanel").style.display = "none";
   });
-    btnCancel.innerText = 'Cancel'
-  btnChange.innerText = 'Mover'
+    btnCancel.innerText = 'X'
+ 
     btnChange.style.backgroundColor = "green";
-  btnDelete.innerText = "Delete";
+
   btnDelete.style.height = "30px";
-  btnDelete.style.fontSize = "20px";
+  btnDelete.style.fontSize = "16px";
   btnDelete.style.backgroundColor='red'
 btnChange.style.height = "30px";
-  btnChange.style.fontSize = "20px";
+  btnChange.style.fontSize = "16px";
   btnCancel.style.height = "30px";
-  btnCancel.style.fontSize = "20px";
+  btnCancel.style.fontSize = "16px";
 
 
 
