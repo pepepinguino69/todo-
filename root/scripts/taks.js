@@ -81,15 +81,15 @@ window.addEventListener("load", function () {
 
   });
   btnCancel = this.document.createElement("button");
-  btnCancel.style.padding = "10px";
-  btnDelete.style.padding = "10px";
-  btnChange.style.padding = "10px";
-  btnCancel.style.display= "flex";
-  btnDelete.style.display="flex";
-  btnChange.style.display="flex";
-  btnCancel.style.alignItems="center"
-  btnDelete.style.alignItems="center"
-  btnChange.style.alignItems="center"
+  btnCancel.className='panel'
+  btnDelete.className = "panel";
+  btnChange.className = "panel";
+  
+  
+  
+  
+  
+  
 
   btnCancel.addEventListener("click", (e) => {
     document.querySelector("#fullPanel").style.display = "none";
@@ -97,14 +97,11 @@ window.addEventListener("load", function () {
     btnCancel.innerText = 'X'
  
     btnChange.style.backgroundColor = "green";
-
-  btnDelete.style.height = "30px";
-  btnDelete.style.fontSize = "16px";
   btnDelete.style.backgroundColor='red'
-btnChange.style.height = "30px";
-  btnChange.style.fontSize = "16px";
-  btnCancel.style.height = "30px";
-  btnCancel.style.fontSize = "16px";
+
+
+
+
 
 
 
