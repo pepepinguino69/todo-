@@ -238,3 +238,4 @@ footer img {
 }
 
 .completed{text-decoration: line-through;}
+.panel{padding:10px;display:flex;align-items:center}

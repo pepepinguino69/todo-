@@ -73,7 +73,7 @@ window.addEventListener("load", function () {
     botonesCambioEstado();
   });
   btnDelete = document.createElement("button");
-  btnDelete.innerHTML = '<i class="fa fa-trash"></i><sp>&nbspDelete';
+  btnDelete.innerHTML = '<i class="fa fa-trash"></i><sp>&nbsp Delete';
 	
   
   btnDelete.addEventListener("click", (e) => {
