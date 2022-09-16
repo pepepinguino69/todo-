@@ -142,6 +142,8 @@ main h2 {
     align-items: center;
 }
 
+li:hover{color:red;cursor:grabbing;}
+
 .tareas-pendientes .tarea .descripcion .nombre {
     flex-grow: 1;
 }
