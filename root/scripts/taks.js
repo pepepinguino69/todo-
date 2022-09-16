@@ -199,6 +199,7 @@ btnChange.style.height = "30px";
   function renderizarTareas(listado) {
     token = window.localStorage.getItem("jwt");
     const tareasPendientes = document.querySelector(".tareas-pendientes");
+    tareasPendientes.listStyleType='circle'
     const tareasTerminadas = document.querySelector(".tareas-terminadas");
     const fragmentPendientes = document.createDocumentFragment()
     const fragmentTerminadas = document.createDocumentFragment();
@@ -208,6 +209,8 @@ btnChange.style.height = "30px";
     let acc = 0
     listado.forEach(e => {
       line = document.createElement('li')
+      line.style.listStyleType = "\2746";
+     
       
       line.innerHTML = `${e.id}-${e.userId}-${e.description}-${miFecha(e.createdAt)}`
       line.addEventListener("click", (evento) => {
@@ -230,6 +233,8 @@ btnChange.style.height = "30px";
     tareasTerminadas.appendChild(fragmentTerminadas)
     counter = document.querySelector('#cantidad-finalizadas')
     counter.innerHTML = acc
+    
+    
 
 
 
