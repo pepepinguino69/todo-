@@ -74,6 +74,7 @@ window.addEventListener("load", function () {
   btnDelete = this.document.createElement("button");
   btnDelete.addEventListener("click", (e) => {
     botonBorrarTarea();
+
   });
   btnCancel = this.document.createElement("button");
   btnCancel.style.padding = "10px";
@@ -259,6 +260,7 @@ btnChange.style.height = "30px";
     
     clickedItem = document.querySelector('#modifyTask')
     arr=clickedItem.innerText.split('-'); tasksCore('modify',arr[0].substring(0,1)+arr[1])
+     document.querySelector("#fullPanel").style.display = "none";
     consultarTareas();
     
 
@@ -272,7 +274,8 @@ btnChange.style.height = "30px";
   /* -------------------------------------------------------------------------- */
   function botonBorrarTarea() {clickedItem = document.querySelector("#modifyTask");
   arr = clickedItem.innerText.split("-");
-  tasksCore("delete", arr[0].substring(0, 1) + arr[1]);
+    tasksCore("delete", arr[0].substring(0, 1) + arr[1]);
+     document.querySelector("#fullPanel").style.display = "none";
    consultarTareas();
     
 
