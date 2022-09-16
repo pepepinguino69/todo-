@@ -200,7 +200,7 @@ btnChange.style.height = "30px";
   function renderizarTareas(listado) {
     token = window.localStorage.getItem("jwt");
     const tareasPendientes = document.querySelector(".tareas-pendientes");
-    tareasPendientes.listStyleType='circle'
+    tareasPendientes.listStyleType = "\1F44D";
     const tareasTerminadas = document.querySelector(".tareas-terminadas");
     const fragmentPendientes = document.createDocumentFragment()
     const fragmentTerminadas = document.createDocumentFragment();
